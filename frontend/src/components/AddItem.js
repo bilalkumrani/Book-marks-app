@@ -1,7 +1,6 @@
 import React from "react";
 
-const Item = (props) => {
-  const { name, link, freq, _id } = props.item;
+const AddItem = () => {
   return (
     <div
       style={{
@@ -16,15 +15,9 @@ const Item = (props) => {
         marginRight: "10px",
       }}
     >
-      <a
-        href={`/${link}`}
-        target="blank"
-        style={{ alignSelf: "center", fontSize: "3rem" }}
-      >
-        {name[0]}
-      </a>
+      <a style={{ alignSelf: "center", fontSize: "3rem" }}>+</a>
     </div>
   );
 };
 
-export default Item;
+export default AddItem;
